@@ -69,6 +69,46 @@ h2.sec{font-size:17px;font-weight:500;color:var(--muted);margin:32px 0 12px;text
 .item b{display:block;font-family:"Fredoka",sans-serif;font-weight:500;font-size:17px}
 .item span.d{display:block;font-size:14px;color:var(--muted);margin-top:1px}
 footer{margin-top:36px;color:var(--muted);font-size:14px}
+
+/* Larger screens: scale everything up */
+@media (min-width:900px){
+  main{max-width:640px;padding:72px 24px 64px}
+  .avatar{width:132px;height:132px;margin-bottom:20px}
+  h1{font-size:44px}
+  .bio{font-size:20px;max-width:34ch;margin-top:10px}
+  .socials{gap:12px;margin:28px 0 38px}
+  .socials a{padding:11px 20px;font-size:17px}
+  .hero{padding:32px;border-radius:32px}
+  .hero .chars{font-size:42px}
+  .hero h2{font-size:36px;margin:12px 0 8px}
+  .hero p{font-size:18px;margin-bottom:22px}
+  .play{font-size:19px;padding:13px 28px}
+  h2.sec{font-size:22px;margin:44px 0 16px}
+  .list{gap:14px}
+  .item{padding:18px 20px;border-radius:22px;gap:18px}
+  .ico{width:60px;height:60px;font-size:30px;border-radius:16px}
+  .item b{font-size:22px}
+  .item span.d{font-size:17px}
+  footer{font-size:17px;margin-top:48px}
+}
+@media (min-width:1800px){
+  main{max-width:860px;padding-top:96px}
+  .avatar{width:170px;height:170px}
+  h1{font-size:58px}
+  .bio{font-size:26px}
+  .socials a{padding:14px 26px;font-size:21px}
+  .hero{padding:44px;border-radius:40px}
+  .hero .chars{font-size:56px}
+  .hero h2{font-size:48px}
+  .hero p{font-size:24px}
+  .play{font-size:24px;padding:16px 36px}
+  h2.sec{font-size:28px}
+  .item{padding:24px 28px}
+  .ico{width:76px;height:76px;font-size:38px}
+  .item b{font-size:28px}
+  .item span.d{font-size:21px}
+  footer{font-size:21px}
+}
 </style>
 </head>
 <body>
