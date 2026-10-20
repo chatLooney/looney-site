@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Looney – Just Us Island &amp; other things I made</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600&family=Nunito:wght@500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+  --bg:#dff5f3; --blob1:#88d9dc; --blob2:#ffd9a8; --blob3:#ffb4a2;
+  --card:rgba(255,255,255,.62); --card-b:rgba(255,255,255,.9);
+  --ink:#0f3a42; --muted:#4d7479; --accent:#ff7a63; --accent-ink:#fff;
+  color-scheme:light;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0b2a31; --blob1:#1d6f78; --blob2:#7a4a2f; --blob3:#8a3b4d;
+    --card:rgba(255,255,255,.07); --card-b:rgba(255,255,255,.16);
+    --ink:#eafaf8; --muted:#9cc3c4; --accent:#ff8a73; --accent-ink:#2a0f0a;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0b2a31; --blob1:#1d6f78; --blob2:#7a4a2f; --blob3:#8a3b4d;
+  --card:rgba(255,255,255,.07); --card-b:rgba(255,255,255,.16);
+  --ink:#eafaf8; --muted:#9cc3c4; --accent:#ff8a73; --accent-ink:#2a0f0a;
+  color-scheme:dark;
+}
+html{scroll-padding-top:env(safe-area-inset-top,0px);height:100%}
+*{box-sizing:border-box}
+body{
+  margin:0;min-height:100%;color:var(--ink);background-color:var(--bg);
+  background-image:
+    radial-gradient(60% 40% at 15% 10%,var(--blob1),transparent 70%),
+    radial-gradient(50% 35% at 90% 35%,var(--blob2),transparent 70%),
+    radial-gradient(60% 40% at 20% 95%,var(--blob3),transparent 70%);
+  background-attachment:fixed;
+  font-family:"Nunito",system-ui,-apple-system,"Segoe UI",sans-serif;font-weight:500;
+}
+main{max-width:440px;margin:0 auto;padding:44px 20px 40px;text-align:center}
+h1,h2,.t{font-family:"Fredoka","Trebuchet MS",system-ui,sans-serif;margin:0}
+.avatar{width:92px;height:92px;border-radius:50%;margin:0 auto 14px;display:grid;place-items:center;font-size:46px;
+  background:var(--card-b);border:2px solid var(--card-b)}
+h1{font-size:30px;font-weight:600}
+.bio{margin:6px auto 0;max-width:30ch;color:var(--muted);line-height:1.45}
+.socials{display:flex;justify-content:center;gap:10px;margin:20px 0 28px;flex-wrap:wrap}
+.socials a{padding:8px 14px;border-radius:999px;background:var(--card);border:1px solid var(--card-b);
+  color:var(--ink);text-decoration:none;font-weight:700;font-size:14px}
+a:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.hero{display:block;text-decoration:none;color:var(--ink);text-align:left;border-radius:26px;padding:22px;
+  background:linear-gradient(160deg,#88d9dc,#bdeee0 60%,#ffe3b8);color:#0f3a42;
+  box-shadow:0 10px 30px rgba(15,58,66,.18)}
+.hero .chars{font-size:30px;letter-spacing:4px}
+.hero h2{font-size:26px;font-weight:600;margin:8px 0 4px}
+.hero p{margin:0 0 16px;line-height:1.4}
+.play{display:inline-block;background:#ff7a63;color:#fff;font-family:"Fredoka",sans-serif;font-weight:600;
+  padding:10px 20px;border-radius:999px}
+.hero:hover .play{background:#f2654d}
+h2.sec{font-size:17px;font-weight:500;color:var(--muted);margin:32px 0 12px;text-align:left}
+.list{display:grid;gap:10px}
+.item{display:flex;align-items:center;gap:14px;text-align:left;text-decoration:none;color:var(--ink);
+  padding:14px 16px;border-radius:18px;background:var(--card);border:1px solid var(--card-b)}
+.item:hover{background:var(--card-b)}
+.ico{flex:none;width:44px;height:44px;border-radius:12px;display:grid;place-items:center;font-size:22px;background:var(--card-b)}
+.item b{display:block;font-family:"Fredoka",sans-serif;font-weight:500;font-size:17px}
+.item span.d{display:block;font-size:14px;color:var(--muted);margin-top:1px}
+footer{margin-top:36px;color:var(--muted);font-size:14px}
+</style>
+</head>
+<body>
+<main>
+  <div class="avatar" role="img" aria-label="Cartoon avatar of Looney" style="overflow:hidden">
+    <svg viewBox="0 0 100 100" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+      <path d="M14 100 C14 80 30 76 50 76 C70 76 86 80 86 100 Z" fill="#ff7a63"/>
+      <rect x="42" y="68" width="16" height="14" rx="6" fill="#8a5632"/>
+      <circle cx="21" cy="52" r="7" fill="#9a6139"/>
+      <circle cx="79" cy="52" r="7" fill="#9a6139"/>
+      <circle cx="50" cy="48" r="30" fill="#a8693f"/>
+      <path d="M20 44 C18 14 82 14 80 44 C72 34 62 30 50 30 C38 30 28 34 20 44 Z" fill="#241510"/>
+      <path d="M33 41 Q39 38 45 41" stroke="#241510" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <path d="M55 41 Q61 38 67 41" stroke="#241510" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <circle cx="39" cy="49" r="4" fill="#1b1b1b"/>
+      <circle cx="61" cy="49" r="4" fill="#1b1b1b"/>
+      <circle cx="40.2" cy="47.8" r="1.2" fill="#fff"/>
+      <circle cx="62.2" cy="47.8" r="1.2" fill="#fff"/>
+      <path d="M48 53 Q50 58 53 57" stroke="#7d4a2a" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+      <circle cx="32" cy="58" r="4.5" fill="#ff8a73" opacity=".35"/>
+      <circle cx="68" cy="58" r="4.5" fill="#ff8a73" opacity=".35"/>
+      <path d="M38 62 Q50 74 62 62" stroke="#241510" stroke-width="3" fill="#fff" stroke-linejoin="round" stroke-linecap="round"/>
+    </svg>
+  </div>
+  <h1>Looney</h1>
+  <p class="bio">I make small games and apps. Come hang out on the island.</p>
+
+  <nav class="socials" aria-label="Social links">
+    <a href="https://instagram.com/barelylooney">Instagram</a>
+    <a href="https://github.com/chatLooney">GitHub</a>
+    <a href="mailto:chat.looney@gmail.com">Email</a>
+  </nav>
+
+  <a class="hero" href="https://justusisland.world/">
+    <div class="chars" aria-hidden="true">🐨🐱🐼🦝🦦</div>
+    <h2>Just Us Island</h2>
+    <p>A free online island game for friends. Dress up, ride jet skis, and relax in your shared cabin. No download, up to four players.</p>
+    <span class="play">Play now</span>
+  </a>
+
+  <h2 class="sec">More things I made</h2>
+  <div class="list">
+    <a class="item" href="https://github.com/chatLooney/AirBridge-Receiver"><span class="ico" aria-hidden="true">📺</span><span><b>AirBridge</b><span class="d">AirPlay receiver for Android devices</span></span></a>
+    <a class="item" href="https://justusisland.world/updates"><span class="ico" aria-hidden="true">📝</span><span><b>Island updates</b><span class="d">What’s new in the game</span></span></a>
+  </div>
+
+  <footer>Made by Looney ♡</footer>
+</main>
+</body>
+</html>
