@@ -1,0 +1,11 @@
+{
+  "name": "GlassDrawer for Rain",
+  "version": "0.1.0",
+  "experimental": true,
+  "upstreamCommit": "4b091e1698aa983c5f4e694ae243c9a6fd8b52fb",
+  "upstreamRecommendedDiscordIOSBuild": 110861,
+  "bundleSha256": "cc0035f471441396675d2b30f87f9fa1a6e0c1ce28e757aba19017f426bffce7",
+  "defaultEnabled": false,
+  "physicalDeviceTested": false,
+  "testsPassed": 8
+}
